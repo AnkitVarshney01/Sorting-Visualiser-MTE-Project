@@ -2,13 +2,12 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: large;
-  font-weight: bold;
+  /* font-size: large; */
+  /* font-weight: bold; */
 }
 
 nav {
-  background-color: #3b3a3a;
+  background-color: #e85d04;
   color: white;
   display: flex;
   flex-direction: row;
@@ -26,7 +25,7 @@ nav .array-inputs #a_size {
   appearance: none;
   width: 100%;
   height: 5px;
-  background: aqua;
+  background: #370617;
   outline: none;
   opacity: 0.7;
 }
@@ -36,7 +35,7 @@ nav .array-inputs #a_speed {
   appearance: none;
   width: 100%;
   height: 5px;
-  background: aqua;
+  background: #370617;
   outline: none;
   opacity: 0.7;
 }
@@ -45,18 +44,23 @@ nav .array-inputs #a_generate {
   background-color: transparent;
   border: white;
   border-style: solid;
-  outline: none;                     
+  outline: none;
   color: white;
-  background-color: #3b3a3a;
+  font-family: "Comfortaa", cursive;
+  background-color: #d00000;
   transition: all 0.2s ease-in;
   border-radius: 10px;
   padding: 4%;
 }
 
 nav .array-inputs #a_generate:hover {
-  color: #3b3a3a;
-  cursor: pointer;                                                          
+  color: #d00000;
+  cursor: pointer;
   background-color: white;
+}
+
+#a_generate {
+  font-size: 20px;
 }
 
 nav .header_right {
@@ -69,28 +73,42 @@ nav .header_right {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+
 .nav-heading {
   text-align: center;
   display: inline-block;
   font-size: xxx-large;
-  padding: 5px;
-  width: 99.35%;
-  background-color: #3b3a3a;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 20px 0px;
+  width: 100%;
+  background-color: #e85d04;
   color: white;
+}
+
+.a_size_text {
+  font-family: "Comfortaa", cursive;
+}
+
+.a_speed_text {
+  font-family: "Comfortaa", cursive;
 }
 
 nav .header_right .algos {
   display: flex;
-
   place-content: center;
-  padding: 2% 0%;
+  padding: 2% 0% 1%;
 }
+
 .algos {
   display: flex;
   justify-content: center;
   flex-direction: row;
   text-align: center;
   align-items: middle;
+}
+
+.algos button {
+  font-family: "Acme", "sans-serif";
 }
 nav .header_right .algos button {
   background-color: transparent;
@@ -142,21 +160,63 @@ section {
 
 section #array_container {
   display: -webkit-box;
-  display: -ms-flexbox;  
+  display: -ms-flexbox;
   width: 100%;
-  height: 65vh;
+  height: 60vh;
 }
 
-.a_container{
+#array_container {
+  background-color: #ffff;
+  font-size: 20px;
+}
+
+#Info_Cont1 {
+  background-color: #ffff;
+  padding: 5%;
+  font-family: "Comfortaa", cursive;
+  height: 16px;
+}
+
+.procedure {
+  font-weight: bold;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#Info_Cont2 {
+  background-color: #ffff;
+}
+
+.a_container {
   display: flex;
   justify-content: center;
   justify-items: center;
 }
 
 .bottom-container {
-  background-color: #3b3a3a;
+  background-color: green;
   bottom: 0;
   color: white;
+  font-family: "Square Peg", cursive;
+  font-size: 30px;
+  font-weight: lighter;
   padding: 1%;
   position: fixed;
   text-align: center;

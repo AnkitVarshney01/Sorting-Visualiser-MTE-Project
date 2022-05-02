@@ -78,5 +78,9 @@ function runalgo() {
     case "Quick":
       Quick();
       break;
+    case "Heap":
+      Heap();
+      break;
+
   }
 }

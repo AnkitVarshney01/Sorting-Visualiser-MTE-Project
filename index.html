@@ -4,7 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sorting Visualizer</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
@@ -15,12 +32,27 @@
         <div class="header_right">
           <div class="array-inputs">
             <div>
-              <p>Size of the array:</p>
-              <input id="a_size" type="range" min="20" max="150" step="1" value="80" />
+              <p class="a_size_text">Size of the array:</p>
+              <input
+                id="a_size"
+                type="range"
+                min="20"
+                max="150"
+                step="1"
+                value="80"
+              />
             </div>
             <div>
-              <p>Speed of the algorithm:</p>
-              <input id="a_speed" type="range" min="1" max="5" step="1" value="4" background-colo="red" />
+              <p class="a_speed_text">Speed of the algorithm:</p>
+              <input
+                id="a_speed"
+                type="range"
+                min="1"
+                max="5"
+                step="1"
+                value="4"
+                background-colo="red"
+              />
             </div>
             <div><button id="a_generate">Generate New Array!</button></div>
           </div>
@@ -30,14 +62,25 @@
             <button>Insertion</button>
             <button>Merge</button>
             <button>Quick</button>
+            <button>Heap</button>
           </div>
         </div>
       </nav>
     </header>
 
     <section>
-      <div id="Info_Cont1">
-        <p></p>
+      <div id="Info_Cont1" class="dropdown">
+        <span class="procedure">Steps to use Visualizer</span>
+        <div class="dropdown-content">
+          <p>
+            1. Use the slider to set size of array. <br />
+            2. Use the slider to set speed of sorting. <br />
+            3. Generate New Array button can be used to change the elements of
+            array. <br />
+            4. Click the 5 buttons labelled with names of sorting algorithms to
+            sort the array as per that sorting algorithm.
+          </p>
+        </div>
       </div>
 
       <div id="array_container"></div>
@@ -60,5 +103,6 @@
     <script src="./scripts/insertion_sort.js"></script>
     <script src="./scripts/merge_sort.js"></script>
     <script src="./scripts/quick_sort.js"></script>
+    <script src="./scripts/heap_sort.js"></script>
   </body>
 </html>
