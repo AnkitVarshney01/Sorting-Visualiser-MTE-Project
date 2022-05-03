@@ -202,6 +202,9 @@ section #array_container {
 
 #Info_Cont2 {
   background-color: #ffff;
+  padding: 5%;
+  font-family: "Comfortaa", cursive;
+  height: 16px;
 }
 
 .a_container {
