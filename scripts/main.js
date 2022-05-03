@@ -1,6 +1,6 @@
 //Variables
 var inp_as = document.getElementById("a_size"),
-array_size = inp_as.value;
+  array_size = inp_as.value;
 var inp_gen = document.getElementById("a_generate");
 var inp_aspeed = document.getElementById("a_speed");
 
@@ -24,7 +24,7 @@ function generate_array() {
     divs[i] = document.createElement("div");
     cont.appendChild(divs[i]);
     margin_size = 0.1;
-    divs[i].style = 
+    divs[i].style =
       " margin:0% " +
       margin_size +
       "%; background-color:blue; width:" +
@@ -78,9 +78,5 @@ function runalgo() {
     case "Quick":
       Quick();
       break;
-    case "Heap":
-      Heap();
-      break;
-
   }
 }
